@@ -315,7 +315,8 @@ public class commonFunction extends BasePage {
 		String dynamicLocator = String.format(locator, (Object[]) dynamic);
 		WebElement element = driver.findElement(By.xpath(dynamicLocator));
 		return element.getText();
-
 	}
+	
+	
 
 }

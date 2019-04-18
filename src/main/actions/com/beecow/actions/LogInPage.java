@@ -70,6 +70,20 @@ public class LogInPage extends commonFunction {
 		return getText(LogInPageUI.POPUP_PASSWORD_TXT_MESSAGE);
 	} 
 	
+	public void clearByJs(String value)
+	{
+		executeScriptBrowser(value);
+	}
 	
+	public String getTextPOPUP_DangNhap_BTT_LOGINERROR()
+	{
+		waitVisible(LogInPageUI.POPUP_DANGNHAP_BTT_LOGINERROR_MESSAGE);
+		return getText(LogInPageUI.POPUP_DANGNHAP_BTT_LOGINERROR_MESSAGE);
+	} 
 	
+	public String getTextUserName_LBL()
+	{
+		waitVisible(LogInPageUI.USERNAME_LBL);
+		return getText(LogInPageUI.USERNAME_LBL);
+	} 
 }

@@ -21,7 +21,8 @@ public class LogInPageUI {
 	
 	public static final String POPUP_DANGNHAP_BTT_MESSAGE ="//button[@class='btn-solid-orange btn-login']//span[contains(text(),'Đăng nhập')]//preceding::span[@beetranslate='beecow.login.error.validateFormError']//span";
 	
-	
-	
+	public static final String POPUP_DANGNHAP_BTT_LOGINERROR_MESSAGE ="//span[@beetranslate='beecow.login.error.loginError']";
+
+	public static final String USERNAME_LBL ="//span[@class='txt']";
 
 }
