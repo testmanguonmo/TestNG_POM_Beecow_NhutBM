@@ -4,7 +4,9 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
@@ -19,6 +21,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static java.nio.charset.StandardCharsets.*;
 public class commonFunction extends BasePage {
 
 	public commonFunction(WebDriver driver) {
@@ -90,8 +93,9 @@ public class commonFunction extends BasePage {
 		return element.getAttribute(attribute);
 	}
 
-	public String getText(String locator) {
+	public String getText(String locator)  {
 		WebElement element = driver.findElement(By.xpath(locator));
+		 
 		return element.getText();
 	}
 
@@ -220,9 +224,18 @@ public class commonFunction extends BasePage {
 	public void uploadBySendKeys(String locator, String value) {
 		WebElement element = driver.findElement(By.xpath(locator));
 		element.sendKeys(value);
-
 	}
-
+	
+	
+	//Random click random option combobox
+	public void clickRandomOptionInCombobox(String locator) {
+		
+    	List<WebElement> selects = driver.findElements(By.xpath(locator));
+		Random rand = new Random();
+		int list = rand.nextInt(selects.size());
+		selects.get(list).click();
+	}
+	
 	public void uploadByRobot(String locator, String value) throws InterruptedException, Exception {
 		StringSelection select = new StringSelection(value);
 		WebElement btnBrowse = driver.findElement(By.xpath(locator));
@@ -248,6 +261,7 @@ public class commonFunction extends BasePage {
 
 	}
 
+	//
 	public void executeScriptBrowser(String javaScript) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript(javaScript);
@@ -317,6 +331,9 @@ public class commonFunction extends BasePage {
 		return element.getText();
 	}
 	
-	
+	public boolean checkElementDisplay(String locator) {
+		Boolean isPresent = driver.findElements(By.xpath(locator)).size() > 0;
+		return isPresent;
+	}
 
 }

@@ -6,9 +6,9 @@
 		<parameter name="url" value="https://www.beecow.com" />
 		<classes>
 		    
-			<class name="com.beecow.testcase.LogInScript" />
-<!-- 			<class name="com.bankguru.testcase.NewCustomerScript" /> -->
-<!-- 			<class name="com.bankguru.testcase.EditCustomerScript" /> -->
+<!-- 			<class name="com.beecow.testcase.LogInScript" /> -->
+			<class name="com.beecow.testcase.HomePageScript" />
+
 
 		</classes>
 	</test>

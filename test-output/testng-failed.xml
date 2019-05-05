@@ -9,14 +9,30 @@
     <parameter name="version" value="2.46"/>
     <parameter name="url" value="https://www.beecow.com"/>
     <classes>
-      <class name="com.beecow.testcase.LogInScript">
+      <class name="com.beecow.testcase.HomePageScript">
         <methods>
-          <include name="afterClass"/>
-          <include name="testcase_02"/>
+          <include name="testcase_06"/>
+          <include name="testcase_17"/>
           <include name="testcase_03"/>
+          <include name="testcase_14"/>
+          <include name="testcase_04"/>
+          <include name="testcase_15"/>
+          <include name="testcase_09"/>
+          <include name="testcase_07"/>
+          <include name="testcase_18"/>
+          <include name="testcase_08"/>
+          <include name="testcase_19"/>
           <include name="beforeClass"/>
+          <include name="testcase_01"/>
+          <include name="testcase_12"/>
+          <include name="testcase_02"/>
+          <include name="testcase_13"/>
+          <include name="testcase_10"/>
+          <include name="testcase_11"/>
+          <include name="testcase_05"/>
+          <include name="testcase_16"/>
         </methods>
-      </class> <!-- com.beecow.testcase.LogInScript -->
+      </class> <!-- com.beecow.testcase.HomePageScript -->
     </classes>
   </test> <!-- Login guru on Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

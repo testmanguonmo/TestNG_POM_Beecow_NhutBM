@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" total="19" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10067" started-at="2019-04-17T17:12:06Z" finished-at="2019-04-17T17:12:16Z">
+  <suite name="Suite" duration-ms="76446" started-at="2019-05-05T06:53:11Z" finished-at="2019-05-05T06:54:27Z">
     <groups>
     </groups>
-    <test name="Login guru on Chrome" duration-ms="10067" started-at="2019-04-17T17:12:06Z" finished-at="2019-04-17T17:12:16Z">
-      <class name="com.beecow.testcase.LogInScript">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.beecow.testcase.LogInScript@2a5ca609]" name="beforeClass" is-config="true" duration-ms="6958" started-at="2019-04-18T00:12:06Z" finished-at="2019-04-18T00:12:13Z">
+    <test name="Login guru on Chrome" duration-ms="76446" started-at="2019-05-05T06:53:11Z" finished-at="2019-05-05T06:54:27Z">
+      <class name="com.beecow.testcase.HomePageScript">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="beforeClass" is-config="true" duration-ms="53395" started-at="2019-05-05T13:53:11Z" finished-at="2019-05-05T13:54:04Z">
           <params>
             <param index="0">
               <value>
@@ -28,147 +28,296 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testcase_01()[pri:0, instance:com.beecow.testcase.LogInScript@2a5ca609]" name="testcase_01" duration-ms="2937" started-at="2019-04-18T00:12:13Z" finished-at="2019-04-18T00:12:16Z">
+        <test-method status="PASS" signature="testcase_01()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_01" duration-ms="10811" started-at="2019-05-05T13:54:04Z" finished-at="2019-05-05T13:54:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_01 -->
-        <test-method status="FAIL" signature="testcase_02()[pri:0, instance:com.beecow.testcase.LogInScript@2a5ca609]" name="testcase_02" duration-ms="92" started-at="2019-04-18T00:12:16Z" finished-at="2019-04-18T00:12:16Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <span _ngcontent-c5="" beetranslate="beecow.action.login">...</span> is not clickable at point (1145, 74). Other element would receive the click: <modal-container class="modal fade myModalSignIn in" role="dialog" tabindex="-1" style="display: block;">...</modal-container>
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\LAP121~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58528}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: ba88efaf5d5b9e65283f8a2a557ecb44]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span _ngcontent-c5="" beetranslate="beecow.action.login">...</span> is not clickable at point (1145, 74). Other element would receive the click: <modal-container class="modal fade myModalSignIn in" role="dialog" tabindex="-1" style="display: block;">...</modal-container>
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\LAP121~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58528}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: ba88efaf5d5b9e65283f8a2a557ecb44
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at CommonPage.commonFunction.click(commonFunction.java:48)
-	at com.beecow.actions.LogInPage.clickDangNhap_BTT(LogInPage.java:19)
-	at com.beecow.testcase.LogInScript.testcase_02(LogInScript.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="13" started-at="2019-05-05T13:54:15Z" finished-at="2019-05-05T13:54:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_01 status=SUCCESS method=HomePageScript.testcase_01()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_02()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_02" duration-ms="721" started-at="2019-05-05T13:54:15Z" finished-at="2019-05-05T13:54:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_02 -->
-        <test-method status="FAIL" signature="testcase_03()[pri:0, instance:com.beecow.testcase.LogInScript@2a5ca609]" name="testcase_03" duration-ms="66" started-at="2019-04-18T00:12:16Z" finished-at="2019-04-18T00:12:16Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <span _ngcontent-c5="" beetranslate="beecow.action.login">...</span> is not clickable at point (1145, 74). Other element would receive the click: <modal-container class="modal fade myModalSignIn in" role="dialog" tabindex="-1" style="display: block;">...</modal-container>
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\LAP121~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58528}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: ba88efaf5d5b9e65283f8a2a557ecb44]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span _ngcontent-c5="" beetranslate="beecow.action.login">...</span> is not clickable at point (1145, 74). Other element would receive the click: <modal-container class="modal fade myModalSignIn in" role="dialog" tabindex="-1" style="display: block;">...</modal-container>
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\LAP121~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58528}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: ba88efaf5d5b9e65283f8a2a557ecb44
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at CommonPage.commonFunction.click(commonFunction.java:48)
-	at com.beecow.actions.LogInPage.clickDangNhap_BTT(LogInPage.java:19)
-	at com.beecow.testcase.LogInScript.testcase_03(LogInScript.java:63)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:16Z" finished-at="2019-05-05T13:54:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_02 status=SUCCESS method=HomePageScript.testcase_02()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_03()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_03" duration-ms="462" started-at="2019-05-05T13:54:16Z" finished-at="2019-05-05T13:54:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_03 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.beecow.testcase.LogInScript@2a5ca609]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-04-18T00:12:16Z" finished-at="2019-04-18T00:12:16Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-05-05T13:54:16Z" finished-at="2019-05-05T13:54:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_03 status=SUCCESS method=HomePageScript.testcase_03()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_04()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_04" duration-ms="1720" started-at="2019-05-05T13:54:16Z" finished-at="2019-05-05T13:54:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_04 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:18Z" finished-at="2019-05-05T13:54:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_04 status=SUCCESS method=HomePageScript.testcase_04()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_05()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_05" duration-ms="2731" started-at="2019-05-05T13:54:18Z" finished-at="2019-05-05T13:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_05 -->
+        <test-method status="PASS" signature="testcase_06()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_06" duration-ms="513" started-at="2019-05-05T13:54:21Z" finished-at="2019-05-05T13:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_06 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:21Z" finished-at="2019-05-05T13:54:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_05 status=SUCCESS method=HomePageScript.testcase_05()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_07()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_07" duration-ms="292" started-at="2019-05-05T13:54:21Z" finished-at="2019-05-05T13:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_07 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:21Z" finished-at="2019-05-05T13:54:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_06 status=SUCCESS method=HomePageScript.testcase_06()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_08()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_08" duration-ms="256" started-at="2019-05-05T13:54:21Z" finished-at="2019-05-05T13:54:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_08 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:21Z" finished-at="2019-05-05T13:54:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_07 status=SUCCESS method=HomePageScript.testcase_07()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_09()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_09" duration-ms="290" started-at="2019-05-05T13:54:22Z" finished-at="2019-05-05T13:54:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_09 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:22Z" finished-at="2019-05-05T13:54:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_08 status=SUCCESS method=HomePageScript.testcase_08()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-05-05T13:54:22Z" finished-at="2019-05-05T13:54:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_09 status=SUCCESS method=HomePageScript.testcase_09()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_10()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_10" duration-ms="196" started-at="2019-05-05T13:54:22Z" finished-at="2019-05-05T13:54:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_10 -->
+        <test-method status="PASS" signature="testcase_11()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_11" duration-ms="341" started-at="2019-05-05T13:54:22Z" finished-at="2019-05-05T13:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_11 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:22Z" finished-at="2019-05-05T13:54:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_10 status=SUCCESS method=HomePageScript.testcase_10()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_11 status=SUCCESS method=HomePageScript.testcase_11()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_12()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_12" duration-ms="254" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_12 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_12 status=SUCCESS method=HomePageScript.testcase_12()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_13()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_13" duration-ms="187" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_13 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_13 status=SUCCESS method=HomePageScript.testcase_13()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_14()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_14" duration-ms="205" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_14 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_14 status=SUCCESS method=HomePageScript.testcase_14()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_15()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_15" duration-ms="195" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_15 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_15 status=SUCCESS method=HomePageScript.testcase_15()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_16()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_16" duration-ms="168" started-at="2019-05-05T13:54:23Z" finished-at="2019-05-05T13:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_16 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-05-05T13:54:24Z" finished-at="2019-05-05T13:54:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_16 status=SUCCESS method=HomePageScript.testcase_16()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_17()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_17" duration-ms="201" started-at="2019-05-05T13:54:24Z" finished-at="2019-05-05T13:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_17 -->
+        <test-method status="PASS" signature="testcase_18()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_18" duration-ms="193" started-at="2019-05-05T13:54:24Z" finished-at="2019-05-05T13:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_18 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-05T13:54:24Z" finished-at="2019-05-05T13:54:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_17 status=SUCCESS method=HomePageScript.testcase_17()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-05-05T13:54:24Z" finished-at="2019-05-05T13:54:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_18 status=SUCCESS method=HomePageScript.testcase_18()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_19()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="testcase_19" duration-ms="2997" started-at="2019-05-05T13:54:24Z" finished-at="2019-05-05T13:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_19 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-05-05T13:54:27Z" finished-at="2019-05-05T13:54:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_19 status=SUCCESS method=HomePageScript.testcase_19()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.beecow.testcase.HomePageScript@6767c1fc]" name="afterClass" is-config="true" duration-ms="275" started-at="2019-05-05T13:54:27Z" finished-at="2019-05-05T13:54:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.beecow.testcase.LogInScript -->
+      </class> <!-- com.beecow.testcase.HomePageScript -->
     </test> <!-- Login guru on Chrome -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,3 +1,6 @@
 eclipse.preferences.version=1
+encoding//Data/Beecow.json=UTF-8
+encoding//src/main/actions/CommonPage/commonFunction.java=UTF-8
 encoding//src/main/interfaces/com/beecow/ui/LogInPageUI.java=UTF-8
+encoding//src/main/java/com/beecow/testcase/HomePageScript.java=UTF-8
 encoding//src/main/java/com/beecow/testcase/LogInScript.java=UTF-8

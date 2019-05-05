@@ -2,13 +2,24 @@ package CommonPage;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.List;
 import java.util.Random;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.google.gson.Gson;
 
 import ObjectPageJson.JsonData;
@@ -18,10 +29,19 @@ import io.github.bonigarcia.wdm.FirefoxDriverManager;
 public class CommonTestcase {
 	WebDriver driver;
 
+	ExtentHtmlReporter htmlReport;
+	ExtentReports extent;
+	ExtentTest test;
+	
 	public WebDriver openMultiBrowser(String browser, String version, String url) {
 		if (browser.equals("chrome")) {
+			
+			//Disable notify tren chrome
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-notifications");
 			ChromeDriverManager.getInstance().version(version).setup();
-			driver = new ChromeDriver();
+			
+			driver = new ChromeDriver(options);
 			driver.get(url);
 
 			driver.manage().window().maximize();
@@ -33,13 +53,22 @@ public class CommonTestcase {
 		}
 		return driver;
 	}
-
-	public String randomEmail() {
+	//Random number
+	public String randomNumber() {
 		Random rand = new Random();
 		int n = rand.nextInt(9999999);
 		return String.valueOf(n);
 	}
 
+	//Random click combobox
+	public void clickRandomCombobox(String locator) {
+    	List<WebElement> selects = driver.findElements(By.xpath(locator));
+		Random rand = new Random();
+		int list = rand.nextInt(selects.size());
+		selects.get(list).click();
+	}
+	
+	
 	public void CloseBrowser() {
 		driver.quit();
 	}
@@ -70,6 +99,38 @@ public class CommonTestcase {
 			e.printStackTrace();
 		}
 		return result;
+	}
+	
+	public void inititalReport(String report) {
+		htmlReport = new ExtentHtmlReporter(
+				System.getProperty("user.dir").concat("/test-output/ExtendReport/" + report));
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReport);
+		htmlReport.config().setReportName("Regression Testing");
+		htmlReport.config().setTheme(Theme.STANDARD);
+		htmlReport.config().setTestViewChartLocation(ChartLocation.TOP);
+	}
+	
+	//
+
+	public void logTestCase(String name) {
+		test = extent.createTest(name);
+	}
+
+	public void getResult(ITestResult result) {
+		if (result.getStatus() == ITestResult.FAILURE) {
+			test.log(Status.FAIL, "Test Case Failed is " + result.getName());
+			test.log(Status.FAIL, "Test Case Failed is " + result.getThrowable());
+		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			test.log(Status.PASS, "Test Case Passed is " + result.getName());
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			test.log(Status.SKIP, "Test Case Skipped is " + result.getName());
+		}
+	}
+
+	public void exportReport() {
+		extent.flush();
+		extent.close();
 	}
 
 }
