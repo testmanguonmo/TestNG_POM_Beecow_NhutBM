@@ -2,7 +2,9 @@
 <suite name="Suite" parallel="tests">
 	<test name="Login guru on Chrome">
 		<parameter name="browser" value="chrome" />
-		<parameter name="version" value="2.46" />
+<!-- 		<parameter name="version" value="2.46" /> -->
+		<parameter name="version" value="74.0.3729.6" />
+			
 		<parameter name="url" value="https://www.beecow.com" />
 		<classes>
 		    

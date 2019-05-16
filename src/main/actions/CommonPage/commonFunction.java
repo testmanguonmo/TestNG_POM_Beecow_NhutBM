@@ -267,6 +267,13 @@ public class commonFunction extends BasePage {
 		js.executeScript(javaScript);
 
 	}
+	
+	//Get text JS
+	public String getTextJS(String javaScript) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		return js.executeScript(javaScript).toString();
+
+	}
 
 	public void clickByJs(String locator) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -331,9 +338,12 @@ public class commonFunction extends BasePage {
 		return element.getText();
 	}
 	
+	//
 	public boolean checkElementDisplay(String locator) {
 		Boolean isPresent = driver.findElements(By.xpath(locator)).size() > 0;
 		return isPresent;
 	}
+	//
+	
 
 }

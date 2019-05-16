@@ -1,0 +1,41 @@
+{
+	"HomePage": {
+		"UploadImageNull": "Hãy chọn hình ảnh cho sản phẩm",
+		"ProductNameNull": "Hãy điền tên sản phẩm",
+		"Combobox2Null": "Hãy chọn danh mục.",
+		"DescriptionNull": "Hãy mô tả sản phẩm.",
+		"QuantityNull": "Nhập số lượng.",
+		"PriceNull": "Hãy điền giá.",
+		"WeightNull": "Hãy điền cân nặng sản phẩm.",
+		"WidthNull": "Bắt buộc",
+		"LengthNull": "Bắt buộc",
+		"HeightNull": "Bắt buộc",
+		"MinWeightInvalid": "Cân nặng từ 50g đến 10000g.",
+		"MinWidthInvalid": "Từ 1cm tới 50cm",
+		"MaxWidthInvalid": "Từ 1cm tới 50cm",
+		"MinLengthInvalid": "Từ 1cm tới 30cm",
+		"MaxLengthInvalid": "Từ 1cm tới 30cm",
+		"MinHeightInvalid": "Từ 1cm tới 50cm",
+		"MaxHeightInvalid": "Từ 1cm tới 50cm"
+		
+	},
+	"ExpectedHomePage": {
+		"UploadImageNull": "Hãy chọn hình ảnh cho sản phẩm",
+		"ProductNameNull": "Hãy điền tên sản phẩm",
+		"Combobox2Null": "Hãy chọn danh mục.",
+		"DescriptionNull": "Hãy mô tả sản phẩm.",
+		"QuantityNull": "Nhập số lượng.",
+		"PriceNull": "Hãy điền giá.",
+		"WeightNull": "Hãy điền cân nặng sản phẩm.",
+		"WidthNull": "Bắt buộc",
+		"LengthNull": "Bắt buộc",
+		"HeightNull": "Bắt buộc",
+		"MinWeightInvalid": "Cân nặng từ 50g đến 10000g.",
+		"MinWidthInvalid": "Từ 1cm tới 50cm",
+		"MaxWidthInvalid": "Từ 1cm tới 50cm",
+		"MinLengthInvalid": "Từ 1cm tới 30cm",
+		"MaxLengthInvalid": "Từ 1cm tới 30cm",
+		"MinHeightInvalid": "Từ 1cm tới 50cm",
+		"MaxHeightInvalid": "Từ 1cm tới 50cm"
+	}
+}
